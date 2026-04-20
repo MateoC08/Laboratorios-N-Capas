@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Labo01
+
+server:
+  port: 8085
