@@ -1,15 +1,12 @@
 package com.example.lab02final.repository;
 
-import com.example.lab02final.domain.entity.Ship;
+import com.example.lab02final.domain.entity.Pirate;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
 @Repository
-public interface ShipRepository extends JpaRepository<Ship, UUID> {
+public interface PirateRepository extends JpaRepository<Pirate, UUID> {
 
-    Ship findByName(String name);
-
-    Ship findByCaptain(String captain);
 }

@@ -1,20 +1,17 @@
 package com.example.lab02final.domain.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
-@Table(name = "ship")
+@Table(name = "pirate")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Ship {
+public class Pirate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -22,9 +19,9 @@ public class Ship {
 
     private String name;
 
-    private String captain;
+    private Double bounty;
 
-    private String ocean;
+    private String crew;
 
-    private Integer crewSize;
+    private Boolean isAlive;
 }
